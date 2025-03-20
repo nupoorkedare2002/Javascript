@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM in JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Page Header -->
+    <header class="text-center py-6 bg-blue-600 text-white text-2xl font-bold">
+      DOM In JavaScript
+    </header>
+
+    <!-- Exercises Grid -->
+    <div class="container mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Exercise 01 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <h2 class="text-lg font-semibold">Exercise: 01</h2>
+          <p class="text-gray-600 my-4">Click the button to change text</p>
+          <button
+            onclick="changeText()"
+            class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
+          >
+            Change Text
+          </button>
+        </div>
+
+        <!-- Exercise 02 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <h2 class="text-lg font-semibold">Exercise: 02</h2>
+          <p class="text-gray-600 my-4">Highlight the first city</p>
+          <button
+            onclick="highlightCity()"
+            class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-700"
+          >
+            Highlight City
+          </button>
+        </div>
+
+        <!-- Exercise 03 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <h2 class="text-lg font-semibold">Exercise: 03</h2>
+          <p class="text-gray-600 my-4">Change order from Latte to Espresso</p>
+          <button
+            onclick="changeOrder()"
+            class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700"
+          >
+            Change Order
+          </button>
+        </div>
+
+        <!-- Exercise 04 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <h2 class="text-lg font-semibold">Exercise: 04</h2>
+          <p class="text-gray-600 my-4">Add a new item to shopping list</p>
+          <button
+            onclick="addItem()"
+            class="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-700"
+          >
+            Add Item
+          </button>
+        </div>
+
+        <!-- Exercise 05 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <h2 class="text-lg font-semibold">Exercise: 05</h2>
+          <p class="text-gray-600 my-4">Remove last task</p>
+          <button
+            id="removeLastTask"
+            class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-700"
+          >
+            Remove Task
+          </button>
+        </div>
+        <!-- EX:06 Event handling in the DOM -->
+        <section id="example-6">
+          <h2>Evenet Handling in the DOM</h2>
+          <button
+            id="clickMeButton"
+            class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-700"
+          >
+            Click Me!
+          </button>
+        </section>
+
+        <!-- EX : 07 Evenet Deligation -->
+
+        <section id="example-7">
+          <h2>Event Delegation</h2>
+          <ul id="teaList">
+            <li class="teaItem">Green Tea</li>
+            <li class="teaItem">Black Tea</li>
+            <li class="teaItem">Oolong Tea</li>
+          </ul>
+          <p>Click on any tea to select it!</p>
+        </section>
+
+        <!-- EX: 08 Form Handling -->
+
+        <section id="example-8">
+          <h2>Form Handling</h2>
+          <form id="feedbackForm">
+            <label for="feedbackInput">Your Feedback: </label>
+            <input
+              type="text"
+              id="feedbackInput"
+              placeholder="Enter feedback"
+            />
+            <button type="submit">Submit Feedback</button>
+          </form>
+          <p id="feedbackDisplay"></p>
+        </section>
+
+        <!-- EX : 09 DOM Content Loaded -->
+
+        <section id="example-9">
+          <h2>DOM CONTENT Loaded</h2>
+          <p id="domStatus">Witing for DOM to load...</p>
+        </section>
+
+        <!-- EX : 10 CSS Classes Manipulation -->
+        <section id="example-10">
+          <h2>CSS Classes Manipulation</h2>
+          <p id="descriptionText">This text will change color!</p>
+          <button id="toggleHighlight">Toggle Highlight</button>
+        </section>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
